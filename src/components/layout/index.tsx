@@ -9,7 +9,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div>
       <Header />
-      <div className="pt-0 lg:pt-5 h-[90%]">
+      <div className="pt-0 lg:pt-5 h-[90%] my-10">
         {/* body */}
         {children}
         {/* End body */}

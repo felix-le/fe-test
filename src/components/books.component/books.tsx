@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { IBook } from "../../types";
 import BookPreview from "./book-preview";
 import BookModal from "./bookModal";
