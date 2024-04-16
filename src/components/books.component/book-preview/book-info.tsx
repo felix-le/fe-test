@@ -2,7 +2,16 @@
 import React from "react";
 import { IBook } from "types";
 
-const BookInfo: React.FC<IBook> = ({ name, category, price, deleteFn }) => {
+interface IBookInfoProps extends IBook {
+  deleteFn: (id?: number) => void;
+}
+
+const BookInfo: React.FC<IBookInfoProps> = ({
+  name,
+  category,
+  price,
+  deleteFn,
+}) => {
   return (
     <>
       <h3 className="text-sm font-bold text-blue uppercase w-full text-center font-display min-h-[36px] tracking-widest">
@@ -24,7 +33,7 @@ const BookInfo: React.FC<IBook> = ({ name, category, price, deleteFn }) => {
         </li>
         <li className="text-center text-sm mt-4">
           <button
-            onClick={deleteFn}
+            onClick={() => deleteFn()}
             className=" text-center rounded-full bg-red-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
           >
             Delete

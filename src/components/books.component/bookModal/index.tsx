@@ -4,6 +4,7 @@ interface IBookModal {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
   showModal: boolean;
   modalTitle?: string;
+  saveFn?: () => void;
 }
 
 const BookModal = ({

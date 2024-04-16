@@ -5,6 +5,7 @@ import Layout from "./components/layout";
 import Books from "./components/books.component/books";
 
 import ContentBox from "./components/layout/content-box";
+import { IBook } from "types";
 
 export default function App() {
   const { books } = useSelector((state: RootState) => state.books);
@@ -20,6 +21,7 @@ export default function App() {
     // const data = await response.json();
     // dispatch({ type: "GET_BOOKS", payload: { data } });
   };
+
   useEffect(() => {
     _getBooks();
   }, []);
@@ -27,7 +29,7 @@ export default function App() {
   return (
     <Layout>
       <ContentBox>
-        <Books data={books} />
+        <Books data={books as IBook[]} />
       </ContentBox>
     </Layout>
   ); // Update the type of the 'data' prop to 'IBook[]'
