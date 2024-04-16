@@ -12,15 +12,16 @@ const BookPreview = ({ name, price, category, thumbnail }: IBook) => {
 
   return (
     <>
-      <div className="h-full">
-        <div className="font-normal block p-[25px] relative h-full">
+      <div className="h-full bg-white">
+        <div className="font-normal block p-[25px] relative h-full ">
           <div className="group">
-            <div className="flex flex-col justify-between w-full">
-              <div className="w-[280px] h-[333px] flex flex-col justify-center items-center my-0 mx-auto">
-                <button onClick={_openModal} className="cursor-pointer">
-                  <img src={thumbnail} alt={name} className="w-full h-auto" />
-                </button>
-              </div>
+            <div className="flex flex-col justify-between w-full ">
+              <button
+                onClick={_openModal}
+                className="w-full h-[333px] cursor-pointer flex flex-col justify-center items-center my-0 mx-auto hover:opacity-80"
+              >
+                <img src={thumbnail} alt={name} className="h-auto" />
+              </button>
               <div className="mt-4">
                 <BookInfo
                   name={name}
