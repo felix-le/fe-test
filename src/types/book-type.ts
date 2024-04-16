@@ -1,7 +1,9 @@
 export interface IBook {
-  id: number;
+  id?: number;
   name: string;
   price: number;
-  description: string;
-  category: string;
+  description?: string;
+  category?: string;
+  thumbnail?: string;
+  deleteFn?: () => void;
 }

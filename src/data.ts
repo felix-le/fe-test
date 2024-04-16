@@ -5,6 +5,8 @@ const data = [
     price: 10.99,
     description: "A novel by F. Scott Fitzgerald",
     category: "Fiction",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 2,
@@ -12,6 +14,8 @@ const data = [
     price: 12.49,
     description: "A novel by Harper Lee",
     category: "Fiction",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 3,
@@ -19,6 +23,8 @@ const data = [
     price: 8.99,
     description: "A dystopian novel by George Orwell",
     category: "Science Fiction",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 4,
@@ -26,6 +32,8 @@ const data = [
     price: 9.99,
     description: "A novel by J.D. Salinger",
     category: "Fiction",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 5,
@@ -33,6 +41,8 @@ const data = [
     price: 11.99,
     description: "A novel by J.K. Rowling",
     category: "Fantasy",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 6,
@@ -40,6 +50,8 @@ const data = [
     price: 7.99,
     description: "A novel by Jane Austen",
     category: "Fiction",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 7,
@@ -47,6 +59,8 @@ const data = [
     price: 14.99,
     description: "A fantasy novel by J.R.R. Tolkien",
     category: "Fantasy",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 8,
@@ -54,6 +68,8 @@ const data = [
     price: 19.99,
     description: "A fantasy novel by J.R.R. Tolkien",
     category: "Fantasy",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 9,
@@ -61,6 +77,8 @@ const data = [
     price: 13.49,
     description: "A mystery thriller novel by Dan Brown",
     category: "Thriller",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 10,
@@ -68,6 +86,8 @@ const data = [
     price: 10.49,
     description: "A novel by Paulo Coelho",
     category: "Fiction",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
   {
     id: 11,
@@ -75,6 +95,9 @@ const data = [
     price: 9.79,
     description: "A science fiction comedy novel by Douglas Adams",
     category: "Science Fiction",
+    thumbnail:
+      "https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg",
   },
 ];
+
 export default data;
