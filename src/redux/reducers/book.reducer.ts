@@ -1,5 +1,4 @@
-// import { GET_BOOKS } from "../actionTypes";
-import { GET_BOOKS } from "../actionTypes";
+import { GET_BOOKS, ADD_BOOK } from "../actionTypes";
 
 import { IBook } from "../../types/book-type";
 import data from "../../data";
@@ -30,6 +29,18 @@ const bookReducer = (state = initialEventState, action: IAction) => {
           };
           return newObj;
         }),
+      };
+    case ADD_BOOK:
+      const newBook = {
+        id: state.books.length + 1,
+        ...action.payload.data,
+      };
+      return {
+        ...state,
+        // instead of returning the data directly, we can use fetch data from an API
+        // example of fetching data from an API
+        // books: action.payload.data
+        books: [...state.books, newBook],
       };
     default:
       return state;

@@ -1,11 +1,8 @@
 import React from "react";
 import { IBook } from "types";
 import BookInfo from "./book-info";
-const BookPreview = ({ name, price, category, thumbnail }: IBook) => {
-  const _openModal = () => {
-    console.log("Open modal");
-  };
 
+const BookPreview = ({ name, price, category, thumbnail }: IBook) => {
   const _deleteBook = () => {
     console.log("Delete book");
   };
@@ -17,7 +14,7 @@ const BookPreview = ({ name, price, category, thumbnail }: IBook) => {
           <div className="group">
             <div className="flex flex-col justify-between w-full ">
               <button
-                onClick={_openModal}
+                // onClick={_openModal}
                 className="w-full h-[333px] cursor-pointer flex flex-col justify-center items-center my-0 mx-auto hover:opacity-80"
               >
                 <img src={thumbnail} alt={name} className="h-auto" />
